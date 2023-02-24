@@ -80,13 +80,14 @@ const listData = [
         img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8f046415-2cda-4f4d-b0ea-5bf158449491/air-force-1-07-lx-womens-shoes-0kPfm7.png"
     }
 ]
-const listCart = []
+// const listCart = []
 
 let listProvince = []
 let listDistrict = []
 let listWard = []
 
-const Api = "http://localhost:3000/orders"
+// const Api = "http://localhost:3000/orders"
+const Api = "https://test-api-lls2.onrender.com/orders"
 
 const keyLocalStorageListSP = "DACHSACHSP"
 const keyLocalStorageItemCart = "DANHSACHITEMCART"
@@ -182,8 +183,8 @@ const toast = ({ title = "", message = "", type = "", duration = "" }) => {
 const setDataStorage = (key, value) => {
     localStorage.setItem(key, value)
 }
-setDataStorage(keyLocalStorageListSP, JSON.stringify(listData))
-setDataStorage(keyLocalStorageItemCart, JSON.stringify(listCart))
+// setDataStorage(keyLocalStorageListSP, JSON.stringify(listData))
+// setDataStorage(keyLocalStorageItemCart, JSON.stringify(listCart))
 
 // lấy dữ liệu từ Storage
 const getDataStorage = (key) => {
